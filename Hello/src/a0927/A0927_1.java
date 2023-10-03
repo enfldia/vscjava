@@ -2,7 +2,7 @@ package a0927;
 
 public class A0927_1 {
     public static void main(String[] args) {
-        int charCode = 'a';
+        int charCode = 'A';
         // int charCode = 'a';
         // int charCode = '5';
         

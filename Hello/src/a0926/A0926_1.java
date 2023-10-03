@@ -13,7 +13,7 @@ public class A0926_1 {
         
         intValue = 50;
         long longValue = intValue;
-        System.out.println("longValue:" + intValue);
+        System.out.println("longValue:" + longValue);
         
         longValue = 100;
         float floatValue = longValue;

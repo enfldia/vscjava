@@ -36,6 +36,7 @@ public class A0926_14 {
         String str6 = str5;
 
         boolean result8 = (str1.equals(str2));
+        //equals는 문자열을 비교하는 메서드이다.
         boolean result9 = (! str1.equals(str2));
         System.out.println("result8:" + result8);
         System.out.println("result9:" + result9);
@@ -45,8 +46,10 @@ public class A0926_14 {
         System.out.println("result11:" + result11);
         boolean result12 = (str3 ==str4);
         System.out.println("result12:" + result12);
+        //new String으로 변수를 생성할 경우 값 자체가 담기는게 아닌 값이 저장된 위치값을 나타내기 때문에  == 으로 비교하면 안된다.
         boolean result13 = (str3.equals(str4));
         System.out.println("result13:" + result13);
+        //equals는 new로 새로 지정한 값이 담긴 위치값을 읽어 해당 위치에 담긴 값으로 비교한다.
         boolean result14 = (str4 ==str5);
         System.out.println("result14:" + result14);
         boolean result15 = (str4.equals(str5));

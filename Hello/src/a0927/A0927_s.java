@@ -43,7 +43,7 @@ public class A0927_s {
         double w = 5.0;
         double s = 0.0;
         double e = w%s;
-        if (Double.isNaN(z)){
+        if (Double.isNaN(e)){
             System.out.println("0.0으로 나눌 수 없습니다.");
         }else {
             double result = e + 10;
