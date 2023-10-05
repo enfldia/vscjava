@@ -28,5 +28,6 @@ public class A1004_15 {
         // for (int i = 1; i <= 9; i++) {
         //     System.out.println(number + " x " + i + " = " + (number * i));
         // }
+        scanner.close();
     }
 }

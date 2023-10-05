@@ -16,5 +16,6 @@ public class A37 {
                 }
             }
         }
+        scanner.close();
     }
 }
