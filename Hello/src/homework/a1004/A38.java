@@ -15,9 +15,10 @@ public class A38 {
 
         int b = scanner.nextInt();
 
-        float x = ((float)a * b)/2;
+        // float x = ((float)a * b)/2;
 
-        System.out.println("삼각형의 넓이는 " + x + "입니다.");
+        // System.out.println("삼각형의 넓이는 " + x + "입니다.");
+        System.out.printf("삼각형의 넓이는 %.1f",(float)(a+b)/2);
         scanner.close();
     }
 }
