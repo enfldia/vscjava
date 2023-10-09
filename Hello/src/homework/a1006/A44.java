@@ -1,15 +1,15 @@
-package a1006;
+package homework.a1006;
 
 import java.util.Calendar;
 
-public class A1006_4 {
+public class A44 {
     public static void main(String[] args) {
-        //week 열거 타입 변수 선언
         Week today = null;
-
-        //calendar얻기
+        //Week 열거 타입 변수 선언 
+        
+        //calendar 얻기
         Calendar cal = Calendar.getInstance();
-
+        
         //오늘의 요일 얻기 (1~7);
         int week = cal.get(Calendar.DAY_OF_WEEK);
 
@@ -23,12 +23,20 @@ public class A1006_4 {
             case 6: today = Week.FRIDAY; break;
             case 7: today = Week.SATURDAY; break;
         }
-
-        //열거 타입 변수를 사용
-        if(today == Week.SUNDAY){
-            System.out.println("일요일에는 축구를 합니다.");
-        } else {
-            System.out.println("열심히 자바를 공부합니다.");
+        
+        if(today == Week.SUNDAY | today == Week.MONDAY | today == Week.WEDNESDAY | today == Week.FRIDAY){
+            System.out.println("oh my god");
+        }else{
+            System.out.println("enjoy");
         }
     }
-}//이것이 자바다. 197p
+    public enum Week {
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY,
+        SUNDAY
+    }
+}

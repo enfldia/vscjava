@@ -11,8 +11,8 @@ public class A34_2 {
             if(x == 0){
                 break;
             }
+            scanner.close();
         }
         System.out.println("종료합니다.");
-        scanner.close();
     }
 }

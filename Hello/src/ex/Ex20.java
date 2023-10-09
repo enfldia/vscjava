@@ -21,5 +21,6 @@ public class Ex20 {
         avg = (float)i/100;
 
         System.out.printf("평균 값은:%.2f",avg);
+        scan.close();
     }
 }

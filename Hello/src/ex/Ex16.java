@@ -11,5 +11,6 @@ public class Ex16 {
         //%o는 8진수
         //%x는 16진수
         System.out.printf("%x", num);
+        scan.close();
     }
 }

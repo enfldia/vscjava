@@ -27,5 +27,6 @@ public class Ex29 {
         }else{
             System.out.println("odd");
         }
+        scan.close();
     }
 }

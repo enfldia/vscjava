@@ -10,6 +10,6 @@ public class Ex18 {
         char c = str.charAt(0);//인덱스 0(첫 번째) 문자를 가져옴
         int num = c;
         System.out.println(num);
-
+        scan.close();
     }
 }

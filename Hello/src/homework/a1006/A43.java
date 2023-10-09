@@ -46,6 +46,7 @@ public class A43 {
             }
             out--;
         }
+        sc.close();
         System.out.println();
     }
 

@@ -6,7 +6,7 @@ public class A1005_8 {
 
         int location = subject.indexOf("프로그래밍");
         System.out.println("location");
-        String substring = subject.substring(location);
+        // String substring = subject.substring(location);
 
         location = subject.indexOf("자바");
         if(location != -1){//자바라는 값이 없으면 -1 나옴

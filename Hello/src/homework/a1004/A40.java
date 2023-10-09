@@ -12,5 +12,6 @@ public class A40 {
         }else{
             System.out.println("loes");
         }
+        scanner.close();
     }
 }

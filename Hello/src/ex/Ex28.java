@@ -21,5 +21,6 @@ public class Ex28 {
         if(c%2 ==0){
             System.out.println(c);
         }
+        scan.close();
     }
 }

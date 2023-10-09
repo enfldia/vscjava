@@ -18,5 +18,6 @@ public class Ex14 {
             scan.nextInt();
         }
         System.out.println("입력한 시간은:" + h + ":" + m);
+        scan.close();
     }
 }

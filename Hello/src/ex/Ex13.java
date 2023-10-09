@@ -18,6 +18,6 @@ public class Ex13 {
         System.out.println(i);
         num = (float) i /100;
         System.out.println(num);
-
+        scan.close();
     }
 }

@@ -14,5 +14,6 @@ public class A41 {
         }else{
             System.out.println("lose");
         }
+        scan.close();
     }
 }

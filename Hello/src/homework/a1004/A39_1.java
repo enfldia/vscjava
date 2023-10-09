@@ -17,5 +17,6 @@ public class A39_1 {
             }
         }
         System.out.println("최소값은?"+min);
+        scanner.close();
     }
 }
