@@ -1,4 +1,4 @@
-package a1010.sec04;
+/* package a1010.sec04;
 
 public class StudentExample {
     public static void main(String[] args) {
@@ -9,3 +9,4 @@ public class StudentExample {
         System.out.println("s2 변수가 또 다른 Student 객체를 참조합니다.");
     }
 }
+ */
