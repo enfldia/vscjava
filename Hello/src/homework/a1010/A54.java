@@ -9,9 +9,11 @@ public class A54 {
         int b =sc.nextInt();
 
         if(b%a==0){
-            System.out.println("a*x=b");
+            int x = b/a;
+            System.out.println(a+"*"+ x +"="+b);
         }else if(a%b==0){
-            System.out.println("b*x=a");
+            int x = a/b;
+            System.out.println(b+"*"+ x +"="+a);
         }else {
             System.out.println("none");
         }

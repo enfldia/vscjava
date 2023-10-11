@@ -23,7 +23,7 @@ public class A53 {
         num[8] = y / x;
         num[9] = Math.pow(y, x);
         
-        double maxnum;
+        double maxnum = 0.0;
         maxnum = num[0];
         for(int i=0;i<num.length;i++){
             if(maxnum<num[i]){
