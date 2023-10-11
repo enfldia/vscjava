@@ -25,8 +25,22 @@ public class A59 {
             }
         }
         while(true){
-            
+            if(counter==3){
+                System.out.println("5등입니다.");
+            }
+            if(counter==4){
+                System.out.println("4등입니다.");
+            }
+            if(counter==5){
+                if(bonus==1){
+                    System.out.println("2등입니다.");    
+                }
+                System.out.println("3등입니다.");
+            }
+            if(counter==6){
+                System.out.println("1등입니다.");
+            }
         }
-
+        
     }
 }
