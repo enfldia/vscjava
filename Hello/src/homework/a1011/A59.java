@@ -98,6 +98,6 @@ public class A59 {
                 break;
             }
         }
-
+        sc.close();
     }
 }

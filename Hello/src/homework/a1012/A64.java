@@ -10,5 +10,6 @@ public class A64 {
 
         int c = a%b;
         System.out.println(c);
+        sc.close();
     }
 }

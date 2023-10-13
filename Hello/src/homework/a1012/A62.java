@@ -37,6 +37,6 @@ public class A62 {
         }
         System.out.printf("학번은 %d%02d%03d",gradeN,classN,sNumber);
 
-
+        sc.close();
     }
 }

@@ -1,6 +1,5 @@
 package homework.a1011;
 
-import java.util.Scanner;
 
 public class A56 {
     public static void main(String[] args) {

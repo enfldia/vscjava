@@ -32,5 +32,6 @@ public class A49 {
             h = h - 1;
         }
         System.out.println("입력한 시간의 30분 전 시간은 " + h + "시 " + m2 + "분 입니다.");
+        
     }
 }

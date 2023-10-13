@@ -61,5 +61,6 @@ public class A57 {
             System.out.println("Mom say : no angry");
         }
  */
+sc.close();
     }
 }

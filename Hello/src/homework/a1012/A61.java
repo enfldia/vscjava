@@ -11,7 +11,7 @@ public class A61 {
     String z = sc.next();
     System.out.println("두번째 정수를 입력하세요");
     int y = sc.nextInt();
-    double val = 0;
+    // double val = 0;
     double result = 0;
 
     switch(z){
@@ -36,5 +36,6 @@ public class A61 {
     }
     // System.out.println(x+z+y+"="+result);
     System.out.printf(x+z+y+"= %.2f",result);
+    sc.close();
     }
 }
