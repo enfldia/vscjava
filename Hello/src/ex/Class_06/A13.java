@@ -26,10 +26,11 @@ class Member {
 
 }
 
-class MemberService {
-    boolean login(String id, String password) {
-        this.id = id;
-        this.password = password;
-        return true;
-    }
-}
+// class MemberService extends Member{
+    
+//     boolean login(String id, String password) {
+//         this.id = id;
+//         this.password = password;
+//         return true;
+//     }
+// }
