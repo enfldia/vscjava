@@ -11,6 +11,6 @@ public class A63 {
         int t = 24*d;
 
         System.out.println("입력한 "+d+"일은 "+ t + "시간입니다.");
-
+        sc.close();
     }
 }

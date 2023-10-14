@@ -22,6 +22,7 @@ public class A58_1 {
         } else {
             System.out.println("삼각형을 만들 수 없습니다.");
         }
+        scanner.close();
     }
 
     public static boolean isValidTriangle(int[] sides, int maxLength) {
@@ -33,5 +34,5 @@ public class A58_1 {
 
         return (sum - maxLength) > maxLength;
     }
-
+    
 }

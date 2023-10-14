@@ -6,7 +6,7 @@ public class A59_2 {
         int bonus = 7;
         int[] myNumber = { 13, 23, 8, 35, 40, 45 };
         int count = 0;
-        int bonusCount = 0;
+        // int bonusCount = 0;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 if (myNumber[i] == lotto[j]) {
@@ -30,5 +30,6 @@ public class A59_2 {
         } else {
             System.out.println("꽝입니다.");
         }
+
     }
 }

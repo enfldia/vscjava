@@ -1,6 +1,5 @@
 package homework.a1011;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A59_1 {
@@ -107,6 +106,7 @@ public class A59_1 {
             System.out.println("5등!");
         else
             System.out.println("꽝!");
+            scanner.close();
     }
 
 }

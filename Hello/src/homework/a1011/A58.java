@@ -63,5 +63,6 @@ public class A58 {
             }
         }
  */
+sc.close();
     }
 }
