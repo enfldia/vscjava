@@ -2,7 +2,7 @@ package homework.a1011;
 
 import java.util.Scanner;
 
-public class A58 {
+public class A58_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("삼각형이 될 수 있는지 확인합니다.");

@@ -24,8 +24,8 @@ public class A59 {
                     while (x == lotto[j]) {
                         System.out.println("중복된 번호를 입력했습니다.");
                         System.out.println("번호를 다시 입력해주세요.");
-                        lotto[i] = sc.nextInt();
-                        
+                        x =sc.nextInt();
+                        lotto[i] = x;
                     }
                 }
             } else {
@@ -44,7 +44,8 @@ public class A59 {
                     while (x == num[j]) {
                         System.out.println("중복된 번호를 입력했습니다.");
                         System.out.println("번호를 다시 입력해주세요.");
-                        num[i] = sc.nextInt();
+                        x =sc.nextInt();
+                        num[i] = x;
                     }
                 }
                 for (int k = 0; k < lotto.length; k++) {
