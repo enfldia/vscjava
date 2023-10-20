@@ -1,4 +1,4 @@
-package exam4;
+package a1019.exam4;
 
 import java.util.HashMap;
 import java.util.Iterator;

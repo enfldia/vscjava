@@ -1,4 +1,4 @@
-package sec7;
+package a1019.sec7;
 
 import java.util.Collections;
 import java.util.HashMap;

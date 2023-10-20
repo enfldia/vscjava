@@ -1,4 +1,4 @@
-package exam2;
+package a1019.exam2;
 
 public class Member {
     public String name;

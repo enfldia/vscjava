@@ -1,4 +1,4 @@
-package sec5.exam3;
+package a1019.sec5.exam3;
 
 public class Person implements Comparable<Person> {
     public String name;

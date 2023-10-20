@@ -1,4 +1,4 @@
-package sec4.exam2;
+package a1019.sec4.exam2;
 
 import java.util.Hashtable;
 import java.util.Map;

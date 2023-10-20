@@ -1,4 +1,4 @@
-package sec06.exam1;
+package a1019.sec06.exam1;
 
 public class Coin {
     private int value;

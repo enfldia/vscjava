@@ -1,4 +1,4 @@
-package sec5.exam2;
+package a1019.sec5.exam2;
 
 import java.util.Map.Entry;
 import java.util.NavigableMap;
