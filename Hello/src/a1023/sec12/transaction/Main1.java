@@ -42,6 +42,12 @@ public class Main1 {
                                 .collect(Collectors.toList());
                 System.out.println(cities);
 
+
+                List<String> no3 = transactions.stream()
+                        .map(Transaction::getValue)
+                        .sum();
+                System.out.println(no3);
+
         }
 }
 /* 
