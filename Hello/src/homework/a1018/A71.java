@@ -9,10 +9,14 @@ public class A71 {
         System.out.println("몇개의 숫자를 생성할까요?");
 
         int x = sc.nextInt();
-
+        int sum = 0;
         for (int i = 0; i < x; i++) {
-
+            int y = (int)(Math.random()*9)+2;
+            //(int)(Math.random()*최대값-최소값+1)+최소 값;
+            System.out.print(y + " ");
+            sum += y;
         }
+        System.out.println("(2~10)의 랜덤 수"+ x + "개의 합은 "+sum);
     }
 
 }
