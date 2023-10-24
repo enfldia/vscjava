@@ -8,10 +8,10 @@ public class A05 {
         List<String> list = Arrays.asList(
             "This is a java book",
             "Lambda Expressions",
-            "Jaava8 supports lambda expressions"
+            "java8 supports lambda expressions"
         );
         list.stream()
-            .filter(a->a.equals("java"))
+            .filter(a->a.contains("java"))
             .forEach(a-> System.out.println(a));;
             System.out.println();
         }
