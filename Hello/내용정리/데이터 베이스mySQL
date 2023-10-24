@@ -1,0 +1,68 @@
+DataBase 보기
+Mysql 내의 모든 DataBase들을 모두 보여주는 명령어
+-> show databases;
+
+
+Database 생성
+-> Create database test_sample;
+
+
+DataBase 삭제 명령어
+-> Drop 
+
+
+Datamase 선택(사용)하기
+원하는 DataBase를 사용하기 위해서는 use 명령어를 사용한다.
+->Use test_sample
+
+
+
+3.table
+
+Table 생성 명령어
+
+Create table 테이블명
+
+필드명1 데이터형
+
+필드명2 데이터형
+
+필드명3 데이터형
+
+Primary Key(필드명)
+
+새로운 필드 추가
+
+alter table 테이블명 add 필드명 데이터형 + after 필드명1 으로 하면 필드명1 뒤에 추가
+alter table firend add email char(20)
+
+필드 삭제
+alter table 테이블명 drop 삭제할 필드명, 삭제할 필드명,....
+
+필드 수정하기
+
+alter table 테이블명  change 기존_필드명 바꿀_필드명 데이터형
+alter table friend change tel phone int;
+
+필드 데이터 형 바꾸기
+
+alter table 테이블명 modify 필드명 데이터형;
+alter table friend modify phone int;
+
+데이터베이스 테이블 이름 관리
+
+alter table 기존_테이블명 renama 바꿀_테이블명
+alter table friend rename friends;
+
+데이터베이스 테이블 삭제
+
+drop table 테이블명
+drop table friends;
+
+
+
+데이터 베이스 테이블의 구조를
+
+desc 명령은 '테이블명'의 테이블 필드 구조를 보여줌
+
+desc 테이블명
