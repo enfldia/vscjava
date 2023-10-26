@@ -1,4 +1,4 @@
-package a1026.example;
+package homework.a1026;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,7 +12,7 @@ public class FileClass {
     private String fileName;
 
     public FileClass() {
-        file = new File("d:\\");
+        file = new File("d:/");
     }
 
     public FileClass(String dir, String fileName) {
@@ -22,7 +22,7 @@ public class FileClass {
         //d:\\Temp\abc.txt
     }
 
-    // 파일명이 있는지6 확인하기
+    // 파일명이 있는지 확인하기
     public boolean check(File file) {
         if (file.exists()) {
             return true;

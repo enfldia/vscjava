@@ -1,0 +1,14 @@
+학생 정보 입력
+학생 정보 삭제
+학생 정보 검색
+학생 정보 수정
+학생 목록 보기
+파일로 저장하기
+학생 정보 파일 불러오기
+종료
+
+기본 데이터
+studentDTO s1 = new StudentDTO(id:0,name:"테스트1",age:11,kor:100,eng:90,math:80);
+studentDTO s2 = new StudentDTO(id:1,name:"테스트1",age:22,kor:90,eng:89,math:91);
+studentDTO s3 = new StudentDTO(id:2,name:"테스트1",age:33,kor:85,eng:77,math:55);
+studentDTO s4 = new StudentDTO(id:3,name:"테스트1",age:44,kor:77,eng:68,math:85);
