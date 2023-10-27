@@ -215,3 +215,46 @@ select name, age, gender from member where age>=35 and age<=53 order by age;
 
 
 delete from member;  --> member 테이블의 전체 레코드가 삭제되니 조심할 것.
+
+
+집계함수 : COUNT(개수), SUM(총합), AVG(평균), GROUP BY(묶음)
+
+
+
+◈ COUNT 함수는 컬럼내 레코드의 개수를 세주는 함수로 다음과 같이 사용합니다.
+
+-> SELECT COUNT(컬럼명1) FROM 테이블명;
+
+-> SELECT COUNT(컬럼명1), COUNT(컬럼명2), ... FROM 테이블명;
+
+        COUNT 함수는 레코드의 자료형에 상관없이 사용할 수 있습니다. 
+
+        다만 특별한 경우를 제외하면, 집계함수와 일반 컬럼을 함께 사용할 경우 오류가 발생합니다.
+
+        즉, 다음과 같은 경우에는 오류가 발생합니다.
+
+        -> SELECT COUNT(customerNumber), customerNumber FROM customers; 
+
+
+
+
+◈ SUM 함수는 컬럼 내 레코드 값의 총합을 내주는 함수입니다.
+
+다음과 같이 사용합니다.
+
+-> SELECT SUM(컬럼명1) FROM 테이블명;
+
+-> SELECT SUM(컬럼명1), SUM(컬럼명2), ... FROM 테이블명;
+
+        SUM 함수는 컬럼의 자료형이 숫자형일때만 사용할 수 있습니다. 
+
+        그리고 같은 집계함수끼리는 다음과 같이 함께 사용할 수 있습니다.
+
+
+
+
+◈ AVG 함수는 컬럼 내 레코드 값의 평균을 구해줍니다. 
+
+-> SELECT AVG(컬럼명1) FROM 테이블명;
+
+-> SELECT AVG(컬럼명1), AVG(컬럼명2), ... FROM 테이블명;
