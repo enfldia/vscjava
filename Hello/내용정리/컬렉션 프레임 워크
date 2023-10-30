@@ -54,7 +54,16 @@ List<E> list = new ArrayList<>();   List의 객체와  ArrayList의 객체 타�
 List list= new ArryaList();         모든 타입의 객체 저장 가능
 
 Vector
-ArrayList와 동일한 내부 구조를 가지고 있지만 동기화된(synchronizde)메소드로 구성되어 멀티 스레드가 동시에 vector() 메소드를 실행할 수 없다.
+ArrayList와 동일한 내부 구조를 가지고 있지만 동기화된(synchronized)메소메소드로 구성되어 있기 때문에 멀티 스레드가 동시에 메소드들을 실행할 수 없다.
+멀티 스레드 환경에서도 안전하게 객체를 추가,삭제할 수 있다.
+
+Map<K, V> map = new Hashtable<K, V>();
+Map<K, V> map = new Hashtable<>();
+Map map = new Hashtable();
+
+pPoperties드로 구성되어 멀티 스레드가 동시에 vector() 메소드를 실행할 수 없다.
+Properties는 Hashtable의 자식 클래스이기 때문에 Hashtable의 특징을 그대로 가지고 있다.
+
 그 결과 멀티 스레드 환경에서 안전하게 객체를 추가 또는 삭제할 수 있다.
 반대로 ArrayList로 다중 스레드로 작업을 하면 두 스레드가 동시에 메소드를 호출할 수 있기 때문에 경합이 발생되어 하나만 저장되기 때문이다.
 
@@ -140,7 +149,9 @@ Map 컬렉션은 키(key)와 값(value)로 구성된 엔트리(Entry)객체를 �
 기존에 저장된 키와 동일한 키로 값을 저장하면 기존의 값은 없어지고 새로운 값으로 대치된다.
 
 
-Map 컬렉션에는 HashMap, Hashtable, LinkedHashMap, propertise, TreeMap 등이 있다.
+Map 컬렉션에는 HashMap, Hashtable, LinkedHashMap, pPoperties, TreeMap 등이 있다.
+Properties는 Hashtable의 자식 클래스이기 때문에 Hashtable의 특징을 그대로 가지고 있다.
+
 Map 컬렉션은 키로 객체들을 관리하기 때문에 키를 매개값으로 갖는 메소드가 많다.
 
 객체 추가       V put(K key,V value)                주어진 키와 값을 추가,저장이 되면 값을 리턴
@@ -184,3 +195,66 @@ Itreator<Entry<string, Integer>> entryIterator = entrySet.iterator();   //entryS
         Integer v = entry.getValue();                                   //getValue() 메소드를 사용해서 entry 객체의 벨류 값을 Integer 타입의 v 객체에 대입
         System.out.println(k + " : " + v);
     }
+
+
+Hashtable
+Hashtable은 HashMap과 동일한 내부 구조를 가지고 있다.
+Hashtable은 순서가 있고 동기화된 (synchronized)메소드로 구성되어 있기 때문에 멀티 스레드가 동시에 메소드들을 실행할 수 없다.
+멀티 스레드 환경에서도 안전하게 객체를 추가,삭제할 수 있다.
+
+Map<K, V> map = new Hashtable<K, V>();
+Map<K, V> map = new Hashtable<>();
+Map map = new Hashtable();
+
+Properties
+Properties는 Hashtable의 자식 클래스이기 때문에 Hashtable의 특징을 그대로 가지고 있다.
+Properties는 키와 값을 String 타입으로 제한한 컬렉션이다.Properties는 주로 확장자가 .properties인 프로퍼티 파일을 읽을 때 사용한다.
+키와 갑이 = 기호로 연결되어 있는 텍스트 파일이다.
+
+객체를 생성하고, load() 메소드로 프로퍼티 파일의 내용을 메모리로 로드한다.
+
+Properties properties = new Properties();
+properties.load(Xxx.getResourceAsStream("database.propertise"));
+
+일반적으로 프로퍼티 파일은 클래스 파일들과 함께 저장된다.따라서 클래스 파일을 기준으로 상대 경로를 이용해서 읽는 것이 편리하다.
+Class 객체의 getResourceAsStream() 메소드는 주어진 상대 경로의 리소스 파일을 읽는 InputStream을 리턴한다.
+
+----------------------------------------------------------------------------------------
+
+검색 기능을 강화시킨 컬렉션
+TreeSet과 TreeMap 이 있다.
+
+TreeSet
+이진 트리(binary Tree)를 기반으로 한 Set 컬렉션이다.이진 트리는 어러 개의 노드(node)가 트리 형태로 연결된 구조로,
+루트 노드(root node)라고 불리는 하나의 노드에서 시작해 각 노드에 최대 2개의 노드를 연결할 수 있는 구조 // -> 최상단 노드(루트 노드),1개의 부모 노드-> 최대 2개의 자식노드 연결 가능 
+TreeSet에 객체를 저장하면 자동으로 정렬이된다. 부모 노드의 객체와 비교해서 낮은 것은 왼쪽 자식 노드에. 높은 것은 오른쪽 자식 노드에 저장한다.
+
+TreeSet<E> treeSet = new TreeSet<E>();
+TreeSet<E> treeSet = new TreeSet<>();
+
+Set 타입의 변수에 대입해도 되지만 검색 관련 메소드가 TreeSet에만 정의 되어 있다.
+
+E                   first()                 제일 낮은 객체를 리턴
+E                   last()                  제일 높은 객체를 리턴
+E                   lower(E e)              주어진 객체보다 바로 아래 객체를 리턴
+E                   higher(E e)             주어진 객체보다 바로 위 객체를 리턴
+E                   floor(E e)              주어진 객체와 동등한 객체가 있으면 리턴, 만약 없다면 주어진 객체의 바로 아래의 객체를 리턴
+E                   ceiling(E e)            주어진 객체와 동등한 객체가 있으면 리턴, 만약 없다면 주어진 객체의 바로 위의 객체를 리턴
+E                   pollFirst()             제일 낮은 객체를 꺼내오고 컬렉션에서 제거함
+E                   pollLast()              제일 높은 객체를 꺼내오고 컬레션에서 제거함
+Iterator<E>         descendingIterator()    내림차순으로 정렬된 Iterator를 리턴
+NavigableSet<E>     descendingSet()         내림차순으로 정렬된 NavigableSet을 리턴
+NavigableSet<E>     headSet(
+                        E toElement,        주어진 객체보다 낮은 객체들을 NavigableSet으로 리턴,
+                        boolean inclusive   주어진 객체 포함 여부는 두번째 매개값에 따라 달라짐.(ture,false)
+                    )
+NavigableSet<E>     tailSet(
+                        E fromElement,      주어진 객체보다 높은 객체들을 NavigableSet으로 리턴,
+                        boolean inclusive   주어진 객체 포함 여부는 두번째 매개값에 따라 달라짐.
+                    )
+NavigableSet<E>     subSet(
+                        E fromElement,          시작과 끝으로 주어진 객체 사이의 객체들을 NavigableSet으로 리턴,
+                        boolean fromInclusive   시작과 끝 객체의 포함 여부는 두 번째, 네 번째  매개값에 따라 달라짐
+                        E toElement,        
+                        boolean toInclusive 
+                    )
