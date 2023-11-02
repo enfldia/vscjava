@@ -75,3 +75,20 @@ Thymeleaf 문법
 - ${variableName}
 2.조건문(if) 사용:
 - <div th:if="${condition}"> 내용 </div>
+
+
+롬복(Lombok) - 자바 언어 라이브러리
+1. 반복적인 코드 축약
+2. java빈 (POJO), 데이터 객체, 동일성 및 해시코드 메서드 생성
+3. 코드의 가독성 향상
+
+룸복의 기능
+1. @Gertter @Setter : 게터 세터 메서드 생성
+2. @ToString
+3. @EqualsAndHashCode: equals() 및 hashCode() 메서드를 자동으로 생성합니다.
+4. @AllArgsConstructor : 일반적인 생성자
+   @NoArgsConstructor : 기본 생성자
+   @RequiredArgsConstructor : final 로 선언된 필드들을 인자로 받는 생성자를 생성
+
+5. @Builder : 빌더패턴을 사용한 객체 생성
+6. @Data : @ToString, @EqualsAndHashCode, @Getter, @Setter, @RequiredArgsConstructor를 포함한 모든 것을 자동으로 생성합니다.
