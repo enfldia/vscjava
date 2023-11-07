@@ -92,3 +92,6 @@ Thymeleaf 문법
 
 5. @Builder : 빌더패턴을 사용한 객체 생성
 6. @Data : @ToString, @EqualsAndHashCode, @Getter, @Setter, @RequiredArgsConstructor를 포함한 모든 것을 자동으로 생성합니다.
+
+
+
